@@ -4,46 +4,62 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Landing Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="styles.css" class="stylesheet" />
   </head>
   <body>
-    <!-- Navigation section -->
-    <nav class="navigation">
-      <ul class="menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Case Studies</a></li>
-        <li><a href="#">Testimonials</a></li>
-        <li><a href="#">Recent Work</a></li>
-        <li><a href="#">Get In Touch</a></li>
-      </ul>
-      <ul class="social-media">
-        <li>
-          <a href="#"><img src="images/LinkedIn.png" alt="LinkedIn" /></a>
-        </li>
-        <li>
-          <a href="#"><img src="images/Behance.png" alt="Behance" /></a>
-        </li>
-        <li>
-          <a href="#"><img src="images/Twitter.png" alt="Twitter" /></a>
-        </li>
-      </ul>
-    </nav>
+    <div class="navbar">
+      <!-- Hamburger Icon for Mobile View -->
+      <!-- The 'menu-toggle' class is used to control the display of the icon -->
+      <i class="fas fa-bars menu-toggle" onclick="toggleMenu()"></i>
+
+      <!-- Navigation section -->
+      <nav class="menu" id="menu">
+        <ul class="navigation">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Case Studies</a></li>
+          <li><a href="#">Testimonials</a></li>
+          <li><a href="#">Recent Work</a></li>
+          <li><a href="#">Get In Touch</a></li>
+          <li>
+            <ul class="social-media">
+              <li>
+                <a href="#"><img src="images/LinkedIn.png" alt="LinkedIn" /></a>
+              </li>
+              <li style="padding-left: 5px">
+                <a href="#"><img src="images/Twitter.png" alt="Twitter" /></a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
 
     <!-- Hero section -->
     <section class="main-container">
       <div class="about-me">
         <h1>Heather Rutherford</h1>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas
-          similique, quam maxime doloribus, debitis deleniti, sed accusantium
-          nobis quia vitae accusamus unde. Voluptatibus, aut iusto!
+          Hello! I'm a web developer passionate about building beautiful and
+          functional websites. While you're here, take a look around and check
+          out my work!
         </p>
         <div class="started">
           <a href="#" class="btn">Let's get started ></a>
         </div>
       </div>
       <div class="photo">
-        <img src="https://placehold.co/350x350" alt="Heather's mug shot!" />
+        <img src="images/Profile_Picture.jpg" alt="Heather's mug shot!" />
       </div>
     </section>
     <!-- Footer -->
@@ -69,5 +85,12 @@
         </ul>
       </div>
     </section>
+    <!-- JavaScript for Toggling the Menu -->
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("menu");
+        menu.classList.toggle("active");
+      }
+    </script>
   </body>
 </html>

@@ -17,37 +17,61 @@ body {
   background-color: black;
 }
 
+/* Navbar Styles */
+.navbar {
+  background-color: #1b1b1b; /* Dark background */
+  /* padding: 10px 20px; Spacing inside navbar */
+  margin: 20px 0;
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space between items */
+  align-items: center; /* Center items vertically */
+}
+
+/* Hamburger Icon Styles */
+/* The fix: Our custom styles now override any conflicting styles from Font Awesome */
+.menu-toggle {
+  color: white; /* White icon color */
+  font-size: 24px; /* Icon size */
+  cursor: pointer; /* Pointer cursor on hover */
+  display: none; /* Hide by default (visible only on mobile) */
+}
+
 /* Navigation Styling */
-.navigation {
+.menu {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 1110px;
-  height: 70px;
+  /* width: 1110px; */
+  /* height: 70px; */
+  width: 90%;
+  padding: 20px 0;
   margin-left: 60px;
+  margin-right: 60px;
   border-bottom-right-radius: 8px;
   border-bottom-left-radius: 8px;
-  background-color: #1b1b1b;
+  /* background-color: lightblue; */
+  background-color: #1b1b1b; /* #333333*/
 }
 
-.navigation ul {
+.menu ul {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.navigation .menu {
-  width: 717px;
-  height: 18px;
+.menu .navigation {
+  display: flex;
+  width: 90%;
+  /* height: 18px; */
   gap: 70px;
-  margin-right: 95px;
+  margin-right: 80px;
 }
 
-.navigation ul li {
+.menu ul li {
   list-style: none;
 }
 
-.navigation .menu li a {
+.menu .navigation li a {
   text-decoration: none;
   color: #9c9c9c;
   font-family: "IBM Plex Mono";
@@ -56,35 +80,46 @@ body {
   letter-spacing: 1%;
 }
 
-.navigation .social-media {
-  width: 107px;
-  height: 17px;
+.menu .social-media {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  /* display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  max-width: 107px;
+  max-height: 17px;
+  width: 20%;
   gap: 25px;
   color: #ffffff;
-  border: 1px solid #1b1b1b;
+  border: 1px solid white; #1b1b1b; */
 }
 
-.navigation .social-media li a {
+.menu .social-media li {
+  display: flex;
+  padding-left: 10px;
+}
+.menu .social-media li a {
   text-decoration: none;
   color: #9c9c9c;
 }
 
 .main-container {
   display: flex;
+  flex-wrap: wrap-reverse; /* This ensures that the profile picture is placed before the text when flex-wrap triggered. */
   justify-content: center;
   align-items: center;
   width: 100%;
 }
 
+/* Styles the About Me section */
 .main-container .about-me {
   display: flex;
   flex-direction: column;
   width: 400px;
   height: 247px;
   gap: 30;
-  margin-left: 180px;
-  margin-right: 32px;
-  margin-top: 131px;
 }
 
 .main-container .about-me h1 {
@@ -96,7 +131,10 @@ body {
   gap: 10px;
 }
 
+/* Styles for the profile picture */
 .main-container .photo {
+  display: flex;
+  flex-direction: column;
   height: 350px;
   width: 350px;
   border-radius: 200px;
@@ -104,6 +142,7 @@ body {
   margin-top: 80px;
 }
 
+/* The Let's get started > button */
 .main-container .started {
   margin-top: 30px;
 }
@@ -122,19 +161,23 @@ body {
   height: 63px;
 }
 
+/* Styles for the footer */
 .footer {
-  display: inline-block;
+  display: inline-flexbox;
   margin: 95px 0 45px 0;
 }
 
+/* Style the 'Worked With' text */
 .footer h3 {
   padding-left: 180px;
   margin-bottom: 10px;
   font-size: 14px;
   font-weight: 400;
   vertical-align: bottom;
+  color: #9c9c9c;
 }
 
+/* Styles for the icons */
 .footer .icons ul {
   list-style: none;
   display: flex;
@@ -151,6 +194,7 @@ body {
   text-align: center;
   padding-top: 7px;
   margin-left: 160px;
+  opacity: 80%; /* Sets the opacity of the icons to match the ones in the menu. */
 }
 .footer ul li a {
   text-decoration: none;
@@ -161,4 +205,41 @@ body {
   width: 24px;
   height: 24px;
   opacity: 0.8;
+}
+
+/* Media Query for Mobile View */
+@media (max-width: 768px) {
+  /* Show the hamburger icon */
+  .menu-toggle {
+    display: block; /* Show icon only in mobile view */
+  }
+
+  /* Hide the menu by default in mobile view */
+  .menu {
+    display: none; /* Hide menu */
+    flex-direction: column; /* Stack items vertically */
+    position: absolute; /* Position relative to navbar */
+    background-color: #333; /* Same background as navbar */
+    top: 60px; /* Position below the navbar */
+    left: 0;
+    right: 0;
+    z-index: 1; /* Stay on top of other elements */
+    padding: 20px 0; /* Padding around menu items */
+  }
+
+  /* Show the menu when active */
+  .menu.active {
+    display: flex; /* Display menu */
+  }
+
+  /* Adjust the menu list for mobile */
+  .menu ul {
+    flex-direction: column; /* Stack list items vertically */
+    align-items: center; /* Center items horizontally */
+  }
+
+  /* Adjust menu items for mobile */
+  .menu li {
+    margin: 10px 0; /* Space between items */
+  }
 }
