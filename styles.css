@@ -1,0 +1,164 @@
+/* Import Raleway and IBM Plex Mono font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* General Reset to remove default margins and padding */
+body * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  min-height: 100vh;
+  color: white;
+  background-color: black;
+}
+
+/* Navigation Styling */
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1110px;
+  height: 70px;
+  margin-left: 60px;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  background-color: #1b1b1b;
+}
+
+.navigation ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation .menu {
+  width: 717px;
+  height: 18px;
+  gap: 70px;
+  margin-right: 95px;
+}
+
+.navigation ul li {
+  list-style: none;
+}
+
+.navigation .menu li a {
+  text-decoration: none;
+  color: #9c9c9c;
+  font-family: "IBM Plex Mono";
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 1%;
+}
+
+.navigation .social-media {
+  width: 107px;
+  height: 17px;
+  gap: 25px;
+  color: #ffffff;
+  border: 1px solid #1b1b1b;
+}
+
+.navigation .social-media li a {
+  text-decoration: none;
+  color: #9c9c9c;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.main-container .about-me {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 247px;
+  gap: 30;
+  margin-left: 180px;
+  margin-right: 32px;
+  margin-top: 131px;
+}
+
+.main-container .about-me h1 {
+  padding: 10px 0;
+  height: 72px;
+  font-size: 30px;
+  font-weight: 800;
+  height: 72px;
+  gap: 10px;
+}
+
+.main-container .photo {
+  height: 350px;
+  width: 350px;
+  border-radius: 200px;
+  overflow: hidden;
+  margin-top: 80px;
+}
+
+.main-container .started {
+  margin-top: 30px;
+}
+.main-container .started .btn {
+  background-color: #3f8e00;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 21px 64px;
+  text-decoration: none;
+  letter-spacing: 0;
+  transition: 0.05s;
+  display: inline-block;
+  border-radius: 5px;
+  width: 307px;
+  height: 63px;
+}
+
+.footer {
+  display: inline-block;
+  margin: 95px 0 45px 0;
+}
+
+.footer h3 {
+  padding-left: 180px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  vertical-align: bottom;
+}
+
+.footer .icons ul {
+  list-style: none;
+  display: flex;
+}
+
+.footer .icons ul li {
+  width: 130px;
+  margin-left: 15px;
+  margin-right: 15px;
+  border: 1px solid #1b1b1b;
+}
+
+.footer .icons {
+  text-align: center;
+  padding-top: 7px;
+  margin-left: 160px;
+}
+.footer ul li a {
+  text-decoration: none;
+  text-align: center;
+}
+
+.footer ul li a img {
+  width: 24px;
+  height: 24px;
+  opacity: 0.8;
+}
