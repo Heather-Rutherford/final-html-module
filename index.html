@@ -15,35 +15,55 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="styles.css" class="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" class="stylesheet" />
   </head>
   <body>
-    <div class="navbar">
+    <header class="navbar">
       <!-- Hamburger Icon for Mobile View -->
       <!-- The 'menu-toggle' class is used to control the display of the icon -->
       <i class="fas fa-bars menu-toggle" onclick="toggleMenu()"></i>
 
       <!-- Navigation section -->
       <nav class="menu" id="menu">
-        <ul class="navigation">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Case Studies</a></li>
-          <li><a href="#">Testimonials</a></li>
-          <li><a href="#">Recent Work</a></li>
-          <li><a href="#">Get In Touch</a></li>
-          <li>
-            <ul class="social-media">
-              <li>
-                <a href="#"><img src="images/LinkedIn.png" alt="LinkedIn" /></a>
-              </li>
-              <li style="padding-left: 5px">
-                <a href="#"><img src="images/Twitter.png" alt="Twitter" /></a>
-              </li>
-            </ul>
-          </li>
-        </ul>
+        <div class="left-section">
+          <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Case Studies</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Recent Work</a></li>
+            <li><a href="#">Get In Touch</a></li>
+          </ul>
+        </div>
+        <div class="right-section">
+          <ul class="social-media">
+            <li>
+              <a
+                href="https://www.linkedin.com/in/heather-rutherford2013/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img src="images/LinkedIn.png" alt="LinkedIn"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://truthsocial.com/@HeatherRutherford2013"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img src="images/icons8-truth-48.png" alt="Truth Social"
+              /></a>
+            </li>
+            <li style="padding-left: 5px">
+              <a
+                href="https://x.com/HeatherR49712"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><img src="images/Twitter.png" alt="Twitter"
+              /></a>
+            </li>
+          </ul>
+        </div>
       </nav>
-    </div>
+    </header>
 
     <!-- Hero section -->
     <section class="main-container">

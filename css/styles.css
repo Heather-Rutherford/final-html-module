@@ -7,24 +7,28 @@ body * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  /* font-family: "IBM Plex Mono", monospace; */
 }
 
 html,
 body {
   min-height: 100vh;
-  color: white;
-  background-color: black;
+  /* color: white; */
+  /* background-color: black; */
 }
 
 /* Navbar Styles */
 .navbar {
-  background-color: #1b1b1b; /* Dark background */
-  /* padding: 10px 20px; Spacing inside navbar */
-  margin: 20px 0;
   display: flex; /* Use flexbox for layout */
-  justify-content: space-between; /* Space between items */
-  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items vertically */
+  align-items: center;
+  background-color: #1b1b1b; /* Dark background */
+  width: 1110px;
+  height: 70px;
+  margin: 0 auto; /* Center navbar horizontally */
+  border: 1px solid #1b1b1b; /* Border color to match background */
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 
 /* Hamburger Icon Styles */
@@ -41,17 +45,33 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* width: 1110px; */
-  /* height: 70px; */
-  width: 90%;
-  padding: 20px 0;
-  margin-left: 60px;
-  margin-right: 60px;
-  border-bottom-right-radius: 8px;
-  border-bottom-left-radius: 8px;
+  /* width: 90%; */
+  /* padding: 20px 0; */
+  /* padding-left: 85px; */
+  /* padding-right: 85px; */
+  /* border-bottom-right-radius: 8px; */
+  /* border-bottom-left-radius: 8px; */
   /* background-color: lightblue; */
-  background-color: #1b1b1b; /* #333333*/
+  /* background-color: #1b1b1b; #333333 */
+  /* border: 1px solid whitesmoke; */
+  gap: 95px;
 }
+
+.menu .left-section {
+  font-family: "IBM Plex Mono";
+  font-weight: 400;
+  font-size: 14px;
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /* align-items: center; */
+}
+
+/* .menu .right-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid whitesmoke; */
+/* }  */
 
 .menu ul {
   display: flex;
@@ -60,11 +80,11 @@ body {
 }
 
 .menu .navigation {
-  display: flex;
-  width: 90%;
-  /* height: 18px; */
+  width: 717px;
+  height: 18px;
   gap: 70px;
-  margin-right: 80px;
+  font-size: 14px;
+  /* border: 1px solid whitesmoke; */
 }
 
 .menu ul li {
@@ -74,9 +94,6 @@ body {
 .menu .navigation li a {
   text-decoration: none;
   color: #9c9c9c;
-  font-family: "IBM Plex Mono";
-  font-weight: 400;
-  font-size: 14px;
   letter-spacing: 1%;
 }
 
@@ -84,6 +101,7 @@ body {
   display: flex;
   flex-direction: row;
   gap: 25px;
+  /* border: 1px solid whitesmoke; */
   /* display: flex;
   flex-direction: row;
   align-items: center;
@@ -96,13 +114,20 @@ body {
   border: 1px solid white; #1b1b1b; */
 }
 
-.menu .social-media li {
-  display: flex;
-  padding-left: 10px;
-}
-.menu .social-media li a {
-  text-decoration: none;
-  color: #9c9c9c;
+/* .menu .social-media li { */
+/* display: flex; */
+/* padding-left: 10px; */
+/* } */
+
+/* .menu .social-media li a { */
+/* text-decoration: none; */
+/* color: #9c9c9c; */
+/* } */
+
+.menu .social-media li img {
+  width: 18px;
+  height: 17px;
+  /* opacity: 30%; */
 }
 
 .main-container {
