@@ -13,6 +13,10 @@ Visit the URL for easy viewing of the project. If desired, the project can be cl
 1. Run git clone https://github.com/Heather-Rutherford/final-html-module.git
 2. Navigate to and open the index.html in a web browser.
 
+or
+
+Visit Netlify. The project is deployed to:
+
 ## Goals of the Project
 
 The HTML & CSS: Final Module Project has an index.html file that is my personal landing page. The design was translated from https://www.figma.com/design/MD4RVdx3HNvcNdGl8b3AKr/%F0%9F%8E%A8-Personal-Portfolio-Template--Community-?node-id=216-14&t=1pBVMBhuIMzXp1ZB-0.

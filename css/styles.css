@@ -1,5 +1,4 @@
 /* Import Raleway and IBM Plex Mono font */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 /* General Reset to remove default margins and padding */
@@ -7,28 +6,34 @@ body * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  /* font-family: "IBM Plex Mono", monospace; */
+  font-family: "IBM Plex Mono", monospace;
 }
 
 html,
 body {
   min-height: 100vh;
-  /* color: white; */
-  /* background-color: black; */
+  color: white;
+  background-color: black;
 }
 
-/* Navbar Styles */
-.navbar {
+/* Navigation styles */
+.sticky {
   display: flex; /* Use flexbox for layout */
   justify-content: center; /* Center items vertically */
   align-items: center;
+  gap: 95px;
   background-color: #1b1b1b; /* Dark background */
-  width: 1110px;
+  width: calc(
+    100% - 10%
+  ); /* 80% width of the viewport minus 20% for centering */
   height: 70px;
   margin: 0 auto; /* Center navbar horizontally */
   border: 1px solid #1b1b1b; /* Border color to match background */
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  position: sticky; /* Make navbar sticky */
+  top: 0; /* Stick to the top of the viewport */
+  z-index: 1000; /* Ensure navbar is above other content */
 }
 
 /* Hamburger Icon Styles */
@@ -43,121 +48,104 @@ body {
 /* Navigation Styling */
 .menu {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  /* width: 90%; */
-  /* padding: 20px 0; */
-  /* padding-left: 85px; */
-  /* padding-right: 85px; */
-  /* border-bottom-right-radius: 8px; */
-  /* border-bottom-left-radius: 8px; */
-  /* background-color: lightblue; */
-  /* background-color: #1b1b1b; #333333 */
-  /* border: 1px solid whitesmoke; */
-  gap: 95px;
-}
-
-.menu .left-section {
-  font-family: "IBM Plex Mono";
-  font-weight: 400;
-  font-size: 14px;
-  /* display: flex; */
-  /* justify-content: space-between; */
-  /* align-items: center; */
-}
-
-/* .menu .right-section {
-  display: flex;
   justify-content: space-between;
   align-items: center;
-  /* border: 1px solid whitesmoke; */
-/* }  */
+  gap: 95px;
+  font-weight: 400;
+  font-size: 14px;
+}
 
-.menu ul {
+/* Styles for the left section of the menu */
+.menu .left-section ul {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.menu .navigation {
-  width: 717px;
-  height: 18px;
   gap: 70px;
-  font-size: 14px;
-  /* border: 1px solid whitesmoke; */
 }
 
-.menu ul li {
+/* Styles for list items in the navigation menu */
+.menu .left-section ul li {
   list-style: none;
 }
 
-.menu .navigation li a {
+/* Styles for navigation links */
+.menu .left-section ul li a {
   text-decoration: none;
   color: #9c9c9c;
   letter-spacing: 1%;
 }
 
-.menu .social-media {
+.right-section .social-media {
   display: flex;
   flex-direction: row;
   gap: 25px;
-  /* border: 1px solid whitesmoke; */
-  /* display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  max-width: 107px;
-  max-height: 17px;
-  width: 20%;
-  gap: 25px;
-  color: #ffffff;
-  border: 1px solid white; #1b1b1b; */
+  list-style: none;
 }
 
-/* .menu .social-media li { */
-/* display: flex; */
-/* padding-left: 10px; */
-/* } */
+/* Styles for each social media icon */
+.right-section .social-media li {
+  display: flex;
+  padding-left: 10px;
+}
 
-/* .menu .social-media li a { */
-/* text-decoration: none; */
-/* color: #9c9c9c; */
-/* } */
+/* Styles for social media links */
+.right-section .social-media li a {
+  text-decoration: none;
+  color: #9c9c9c;
+}
 
-.menu .social-media li img {
+/* Styles for social media images/icons */
+.right-section .social-media li img {
   width: 18px;
   height: 17px;
-  /* opacity: 30%; */
+  opacity: 40%; /* Sets the opacity of the icons to match the ones in the footer. */
 }
 
-.main-container {
+/* Main container styles */
+.hero-section {
   display: flex;
+  min-height: 100vh;
   flex-wrap: wrap-reverse; /* This ensures that the profile picture is placed before the text when flex-wrap triggered. */
   justify-content: center;
   align-items: center;
   width: 100%;
+  gap: 32px;
 }
 
 /* Styles the About Me section */
-.main-container .about-me {
+.hero-section .left-section {
   display: flex;
   flex-direction: column;
-  width: 400px;
+  width: 538px;
   height: 247px;
-  gap: 30;
+  gap: 30px;
 }
 
-.main-container .about-me h1 {
+/* Styles for the name header */
+.hero-section .left-section h1 {
+  font-family: "Raleway", sans-serif;
   padding: 10px 0;
-  height: 72px;
-  font-size: 30px;
+  font-size: 44px;
   font-weight: 800;
+  font-style: ExtraBold;
+  letter-spacing: 0%;
   height: 72px;
   gap: 10px;
 }
 
+/* Global paragraph styling */
+p {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 1%;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 5px;
+}
+
 /* Styles for the profile picture */
-.main-container .photo {
+.hero-section .right-section {
   display: flex;
   flex-direction: column;
   height: 350px;
@@ -167,11 +155,8 @@ body {
   margin-top: 80px;
 }
 
-/* The Let's get started > button */
-.main-container .started {
-  margin-top: 30px;
-}
-.main-container .started .btn {
+/* Styles for the button */
+.nosy .btn {
   background-color: #3f8e00;
   color: white;
   font-size: 16px;
@@ -181,14 +166,16 @@ body {
   letter-spacing: 0;
   transition: 0.05s;
   display: inline-block;
-  border-radius: 5px;
-  width: 307px;
+  border-radius: 4px;
+  margin-top: 5px;
+  width: 312px;
   height: 63px;
 }
 
 /* Styles for the footer */
 .footer {
-  display: inline-flexbox;
+  display: flex;
+  flex-direction: column;
   margin: 95px 0 45px 0;
 }
 
@@ -199,6 +186,7 @@ body {
   font-size: 14px;
   font-weight: 400;
   vertical-align: bottom;
+  text-align: left;
   color: #9c9c9c;
 }
 
@@ -206,6 +194,7 @@ body {
 .footer .icons ul {
   list-style: none;
   display: flex;
+  justify-content: center;
 }
 
 .footer .icons ul li {
@@ -219,9 +208,10 @@ body {
   text-align: center;
   padding-top: 7px;
   margin-left: 160px;
-  opacity: 80%; /* Sets the opacity of the icons to match the ones in the menu. */
+  opacity: 40%; /* Sets the opacity of the icons to match the ones in the menu. */
 }
 .footer ul li a {
+  color: whitesmoke;
   text-decoration: none;
   text-align: center;
 }
@@ -230,6 +220,8 @@ body {
   width: 24px;
   height: 24px;
   opacity: 0.8;
+  margin-right: 5px;
+  vertical-align: middle;
 }
 
 /* Media Query for Mobile View */
@@ -248,8 +240,14 @@ body {
     top: 60px; /* Position below the navbar */
     left: 0;
     right: 0;
+    gap: 5px;
     z-index: 1; /* Stay on top of other elements */
     padding: 20px 0; /* Padding around menu items */
+  }
+
+  .menu .left-section ul {
+    gap: 2px;
+    padding-bottom: 10px;
   }
 
   /* Show the menu when active */
@@ -264,7 +262,7 @@ body {
   }
 
   /* Adjust menu items for mobile */
-  .menu li {
+  .menu .left-section ul li {
     margin: 10px 0; /* Space between items */
   }
 }

@@ -18,30 +18,36 @@
     <link rel="stylesheet" href="css/styles.css" class="stylesheet" />
   </head>
   <body>
-    <header class="navbar">
+    <header class="sticky">
       <!-- Hamburger Icon for Mobile View -->
       <!-- The 'menu-toggle' class is used to control the display of the icon -->
       <i class="fas fa-bars menu-toggle" onclick="toggleMenu()"></i>
 
       <!-- Navigation section -->
       <nav class="menu" id="menu">
-        <div class="left-section">
-          <ul class="navigation">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Case Studies</a></li>
-            <li><a href="#">Testimonials</a></li>
-            <li><a href="#">Recent Work</a></li>
-            <li><a href="#">Get In Touch</a></li>
+        <section class="left-section">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li>
+              <a href="case-studies.html" target="_parent">Case Studies</a>
+            </li>
+            <li>
+              <a href="testimonials.html" target="_parent">Testimonials</a>
+            </li>
+            <li><a href="recent-work.html" target="_parent">Recent Work</a></li>
+            <li>
+              <a href="get-in-touch.html" target="_parent">Get In Touch</a>
+            </li>
           </ul>
-        </div>
-        <div class="right-section">
+        </section>
+        <section class="right-section">
           <ul class="social-media">
             <li>
               <a
                 href="https://www.linkedin.com/in/heather-rutherford2013/"
                 target="_blank"
                 rel="noopener noreferrer"
-                ><img src="images/LinkedIn.png" alt="LinkedIn"
+                ><img src="images/linkedin.png" alt="LinkedIn"
               /></a>
             </li>
             <li>
@@ -49,7 +55,7 @@
                 href="https://truthsocial.com/@HeatherRutherford2013"
                 target="_blank"
                 rel="noopener noreferrer"
-                ><img src="images/icons8-truth-48.png" alt="Truth Social"
+                ><img src="images/truth-social.png" alt="Truth Social"
               /></a>
             </li>
             <li style="padding-left: 5px">
@@ -57,54 +63,69 @@
                 href="https://x.com/HeatherR49712"
                 target="_blank"
                 rel="noopener noreferrer"
-                ><img src="images/Twitter.png" alt="Twitter"
+                ><img src="images/X.png" alt="X"
               /></a>
             </li>
           </ul>
-        </div>
+        </section>
       </nav>
     </header>
 
     <!-- Hero section -->
-    <section class="main-container">
-      <div class="about-me">
+    <main class="hero-section">
+      <section class="left-section">
         <h1>Heather Rutherford</h1>
+        <p>Welcome to my personal landing page!</p>
         <p>
-          Hello! I'm a web developer passionate about building beautiful and
-          functional websites. While you're here, take a look around and check
-          out my work!
+          I am an experienced AI Documentation Specialist/Freelance with a
+          proven track record in designing, developing, and supporting web
+          applications. I am skilled in generating training data for AI models,
+          evaluating model performance, and conducting detailed research. I am
+          also proficient in technical writing, collaborating with subject
+          matter experts, and demonstrating exceptional attention to detail. I
+          am experienced in creating various documentation types, including user
+          guides, project proposals, and training materials. I am motivated to
+          excel and contribute to achieving organizational objectives through
+          innovation and problem-solving.
         </p>
-        <div class="started">
+        <p class="nosy">
+          While you're here, take a look around and check out my work!
           <a href="#" class="btn">Let's get started ></a>
-        </div>
-      </div>
-      <div class="photo">
+        </p>
+      </section>
+      <section class="right-section">
         <img src="images/Profile_Picture.jpg" alt="Heather's mug shot!" />
-      </div>
-    </section>
+      </section>
+    </main>
+
     <!-- Footer -->
     <section class="footer">
       <h3>Worked with</h3>
       <div class="icons">
         <ul>
           <li>
-            <a href="#"><img src="images/github.png" alt="GitHub" /></a>
+            <a href="#"><img src="images/github.png" alt="GitHub" />GitHub</a>
           </li>
           <li>
-            <a href="#"><img src="images/Google.png" alt="Google" /></a>
+            <a href="#"><img src="images/Google.png" alt="Google" />Google</a>
           </li>
           <li>
-            <a href="#"><img src="images/Microsoft.png" alt="Microsoft" /></a>
+            <a href="#"
+              ><img src="images/Microsoft.png" alt="Microsoft" />Microsoft</a
+            >
           </li>
           <li>
-            <a href="#"><img src="images/Apple.jpg" alt="Apple" /></a>
+            <a href="#"><img src="images/Apple.jpg" alt="Apple" />Apple</a>
           </li>
           <li>
-            <a href="#"><img src="images/QuillBot.png" alt="QuillBot" /></a>
+            <a href="#"
+              ><img src="images/QuillBot.png" alt="QuillBot" />QuillBot</a
+            >
           </li>
         </ul>
       </div>
     </section>
+
     <!-- JavaScript for Toggling the Menu -->
     <script>
       function toggleMenu() {
