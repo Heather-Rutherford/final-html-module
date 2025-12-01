@@ -1,15 +1,6 @@
-/* Style for label in menu */
-.sticky h3 {
-  font-family: "Raleway", sans-serif;
-  margin: 0;
-}
-
 /* Main container styles */
 #main-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
+  flex: 1;
   padding-top: 20px;
   min-height: 100vh;
   width: 100%;
@@ -21,18 +12,17 @@
 }
 
 /* Main Container header styles */
-.main-section h1,
+.portfolio h1,
 h2,
 h3 {
-  font-family: "Raleway", sans-serif;
+  font-family: var(--font-family-headings);
   letter-spacing: 0%;
+  text-align: center;
   gap: 10px;
   margin-bottom: 25px;
 }
 
-.main-section h1 {
-  text-align: center;
-  font-size: 44px;
+.portfolio h1 {
   font-weight: 800;
   font-style: ExtraBold;
   margin-bottom: 10px;
@@ -43,18 +33,68 @@ h3 {
   width: calc(100% - 10%);
 }
 
-/* Specific styles for the paragraphs */
-p {
-  margin-bottom: 15px;
-}
-
 /* Specific styles for the links in the main section */
 a {
-  color: #9c9c9c;
+  color: #9c9c9c; /* Silver color for links */
 }
 
 a:hover {
   font-size: large;
   font-weight: 800;
   font-style: bold;
+}
+
+/* Styles for the Recent Work section */
+.card-content h3 {
+  font-family: var(--font-family-h1);
+  color: #000000;
+  text-align: center;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+/* Styles for individual cards */
+.card {
+  border: 1px solid #ddd;
+  background-color: var(--background-color-recent-work);
+  width: 400px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: var(--shadow-recent-work);
+}
+
+/* Sets the image width inside the card */
+.card img {
+  width: 400px;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+/* Styles for text inside the card */
+.card-content p {
+  font-size: 1em;
+  padding: 5px;
+  text-align: start;
+  color: #000000;
+}
+.card-content h3 {
+  font-size: 1.5em;
+}
+
+/* Styles for links inside the card */
+.card-content a {
+  color: darkred;
+}
+
+.card-content a:hover {
+  color: darkred;
+  font-weight: 800;
+  font-style: bolder;
 }

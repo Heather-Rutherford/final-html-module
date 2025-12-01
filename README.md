@@ -30,6 +30,7 @@ I have rebranded the design as my own personal landing page.
 3. Convert to Code: Use HTML, CSS, and optionally JavaScript to build the page.
 4. Showcase Your Skills: Make it clean, responsive, and visually appealing.
 5. In response to #4, I did implement the hamburger menu. I also implemented the wrapping of the flex objects. In particular, when shrunk, my profile picture wraps to the top of the text.
+6. I have also added additional pages to correlate with the menu items: testimonials, etc.
 
 ## License
 

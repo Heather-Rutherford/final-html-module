@@ -6,7 +6,21 @@ body * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "IBM Plex Mono", monospace;
+  font-family: var(--font-family-main);
+}
+
+:root {
+  --main-color: #f0f1f2;
+  --background-color-recent-work: whitesmoke;
+  --font-color: #000000;
+  --font-family-headings: "Raleway", sans-serif;
+  --font-family-main: "IBM Plex Mono", monospace;
+  --font-family-menu-label: "Raleway", sans-serif;
+  --font-size: 16px;
+  --font-size-h1: 40px;
+  --border-radius: 8px;
+  --shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
+  --shadow-recent-work: 0 4px 8px rgba(245, 245, 245, 0.1);
 }
 
 html,
@@ -36,10 +50,16 @@ body {
   z-index: 1000; /* Ensure navbar is above other content */
 }
 
+/* Style for label in menu */
+.sticky h3 {
+  font-family: var(--font-family-menu-label);
+  margin: 0;
+}
+
 /* Hamburger Icon Styles */
 /* The fix: Our custom styles now override any conflicting styles from Font Awesome */
 .menu-toggle {
-  color: #9c9c9c; /* White icon color */
+  color: #9c9c9c; /* Silver icon color */
   font-size: 24px; /* Icon size */
   cursor: pointer; /* Pointer cursor on hover */
   display: none; /* Hide by default (visible only on mobile) */
@@ -57,7 +77,7 @@ body {
 
 /* Styles for the left section of the menu */
 .sticky h3 {
-  color: #9c9c9c;
+  color: #9c9c9c; /* Silver color for the title */
 }
 /* Styles for the left section of the menu */
 .menu .left-section ul {
@@ -75,7 +95,7 @@ body {
 /* Styles for navigation links */
 .menu .left-section ul li a {
   text-decoration: none;
-  color: #9c9c9c;
+  color: #9c9c9c; /* Silver color for links */
   letter-spacing: 1%;
 }
 
@@ -101,7 +121,7 @@ body {
 /* Styles for social media links */
 .right-section .social-media li a {
   text-decoration: none;
-  color: #9c9c9c;
+  color: #9c9c9c; /* Silver color for links */
 }
 
 /* Styles for social media images/icons */
@@ -127,9 +147,9 @@ p {
   display: inline-block;
   margin-top: 15px;
   padding: 10px 20px;
-  color: #9c9c9c;
+  color: #9c9c9c; /* Silver text color */
   text-decoration: none;
-  border: 1px solid #9c9c9c;
+  border: 1px solid #9c9c9c; /* Silver border */
   font-size: 1em;
   transition: background-color 0.3s ease;
   margin-left: 5px;
@@ -138,7 +158,7 @@ p {
 .return-to-top:hover {
   color: whitesmoke;
   box-shadow: gray 0px 0px 20px;
-  background-color: #9c9c9c;
+  background-color: #9c9c9c; /* Silver background on hover */
 }
 
 /* Container for the Return to Top button */
@@ -165,7 +185,7 @@ p {
   font-weight: 400;
   vertical-align: bottom;
   text-align: left;
-  color: #9c9c9c;
+  color: #9c9c9c; /* Silver text color */
 }
 
 /* Styles for the icons */
