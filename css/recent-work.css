@@ -1,0 +1,60 @@
+/* Style for label in menu */
+.sticky h3 {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+}
+
+/* Main container styles */
+#main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 20px;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.main-section {
+  width: calc(80% - 20%);
+  padding: 20px;
+}
+
+/* Main Container header styles */
+.main-section h1,
+h2,
+h3 {
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 0%;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.main-section h1 {
+  text-align: center;
+  font-size: 44px;
+  font-weight: 800;
+  font-style: ExtraBold;
+  margin-bottom: 10px;
+}
+
+/* Return to top styles */
+.return-to-top-container {
+  width: calc(100% - 10%);
+}
+
+/* Specific styles for the paragraphs */
+p {
+  margin-bottom: 15px;
+}
+
+/* Specific styles for the links in the main section */
+a {
+  color: #9c9c9c;
+}
+
+a:hover {
+  font-size: large;
+  font-weight: 800;
+  font-style: bold;
+}

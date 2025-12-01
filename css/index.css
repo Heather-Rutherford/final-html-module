@@ -1,0 +1,68 @@
+/* Main container styles */
+.hero-section {
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap-reverse; /* This ensures that the profile picture is placed before the text when flex-wrap triggered. */
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 32px;
+}
+
+/* Styles the About Me section */
+.hero-section .left-section {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  width: 538px;
+  gap: 30px;
+}
+
+/* Styles for the name header */
+.hero-section .left-section h1 {
+  font-family: "Raleway", sans-serif;
+  padding: 10px 0;
+  font-size: 44px;
+  font-weight: 800;
+  font-style: ExtraBold;
+  letter-spacing: 0%;
+  gap: 10px;
+}
+
+/* Styles for the profile picture */
+.hero-section .right-section {
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  width: 350px;
+  border-radius: 200px;
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+/* Styles for the button */
+.nosy .btn {
+  background-color: #3f8e00;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 21px 64px;
+  text-decoration: none;
+  letter-spacing: 0;
+  transition: 0.05s;
+  display: inline-block;
+  border-radius: 4px;
+  margin-top: 5px;
+  width: 312px;
+  height: 63px;
+}
+
+.nosy .btn:focus {
+  background-color: #2e5c00;
+  color: white;
+  text-decoration: none;
+}
+
+#return-to-top {
+  width: calc(100% - 20px);
+}

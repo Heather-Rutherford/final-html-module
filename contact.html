@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personal Landing Page</title>
+    <title>Personal Landing Page - Get in Touch</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
     <link
       rel="stylesheet"
@@ -17,7 +17,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="css/common.css" class="stylesheet" />
-    <link rel="stylesheet" href="css/index.css" class="stylesheet" />
+    <link rel="stylesheet" href="css/contact.css" class="stylesheet" />
   </head>
   <body>
     <header class="sticky">
@@ -72,30 +72,42 @@
       </nav>
     </header>
 
-    <!-- Hero section -->
-    <main class="hero-section">
-      <section class="left-section">
-        <h1>Heather Rutherford</h1>
-        <p>Welcome to my personal landing page!</p>
-        <p>
-          I am an experienced AI Documentation Specialist/Freelance with a
-          proven track record in designing, developing, and supporting web
-          applications. I am skilled in generating training data for AI models,
-          evaluating model performance, and conducting detailed research. I am
-          also proficient in technical writing, collaborating with subject
-          matter experts, and demonstrating exceptional attention to detail. I
-          am experienced in creating various documentation types, including user
-          guides, project proposals, and training materials. I am motivated to
-          excel and contribute to achieving organizational objectives through
-          innovation and problem-solving.
-        </p>
-        <p class="nosy">
-          While you're here, take a look around and check out my work!
-          <a href="#" class="btn">Let's get started ></a>
-        </p>
-      </section>
-      <section class="right-section">
-        <img src="images/Profile_Picture.jpg" alt="Heather's mug shot!" />
+    <!-- Main content of the page.-->
+    <main class="main-container">
+      <section class="content">
+        <div id="header">
+          <h2>Contact Us</h2>
+          <img src="images/contact-us.jpg" alt="Contact Us Image" />
+        </div>
+        <form action="#" class="contact-us">
+          <label for="txtName" class="form-text">Name:</label>
+          <input
+            type="text"
+            id="txtName"
+            name="txtName"
+            placeholder="Type your first and last name."
+            required
+            minlength="2"
+          /><br /><br />
+          <label for="txtEmail" class="form-text">Email:</label>
+          <input
+            type="email"
+            id="txtEmail"
+            name="txtEmail"
+            placeholder="Type your email address."
+            required
+          /><br /><br />
+          <label for="txtMessage" class="form-text">Message:</label>
+          <textarea
+            id="txtMessage"
+            name="txtMessage"
+            placeholder="Type your message."
+            required
+            minlength="2"
+          ></textarea
+          ><br /><br />
+          <input type="submit" value="Submit" />
+        </form>
       </section>
     </main>
 
