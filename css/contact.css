@@ -92,7 +92,3 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: darkred;
 }
-
-#return-to-top {
-  width: calc(100% - 20px);
-}
