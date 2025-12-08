@@ -37,11 +37,6 @@ h3 {
   margin-bottom: 10px;
 }
 
-/* Container for the Return to Top button */
-.return-to-top-container {
-  width: calc(100% - 10%);
-}
-
 /* Styles for testimonial cards */
 .testimonial-card {
   display: flex;
